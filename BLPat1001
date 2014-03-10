@@ -1,0 +1,15 @@
+#include <iostream> //包含头文件iostream
+using namespace std; //使用命名空间std
+int main( )
+{
+   int num,counts=0;
+   cin>>num;
+   while(num!=1){
+       if(0==num%2) num /= 2;
+	   else num = (3*num+1)/2;
+	   counts++;
+   }
+   cout<<counts;
+   system("pause");
+   return 0;
+}
